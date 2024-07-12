@@ -4,9 +4,8 @@ function DateCounter() {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(1);
 
-  // This mutates the date object.
   const date = new Date("june 21 2027");
-  date.setDate(date.getDate() + count);
+  date.setDate(date.getDate() + count); // .setDate() adjusts the month and year automatically if the day exceeds the number of days in the month
 
   const dec = function () {
     // setCount((count) => count - 1);
