@@ -7,8 +7,7 @@ function Progress({ index, numQuestions, points, maxPossiblePoints, answer }) {
         // Number(answer !== null): will return true to number 1
       ></progress>
       <p>
-        Question
-        <strong>{index + 1}</strong> / {numQuestions}
+        Question <strong>{index + 1}</strong> / {numQuestions}
       </p>
       <p>
         <strong>{points}</strong> / {maxPossiblePoints} points
